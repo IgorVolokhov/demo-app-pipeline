@@ -1,9 +1,9 @@
  pipeline {
-    agent {label 'Volokhov-agent '}
+    agent {label 'Volokhov-agent'}
     stages {
         stage('Get Sources') {
             steps {
-                git '<Your_Repo_SSH_URL>'
+                sh 'npm install'
             }
         }
         stage('Restore Dependencies') {
