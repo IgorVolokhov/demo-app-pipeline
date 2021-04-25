@@ -3,7 +3,7 @@
     stages {
         stage('Get Sources') {
             steps {
-                sh 'https://github.com/IgorVolokhov/demo-app-pipeline.git'
+                git 'https://github.com/IgorVolokhov/demo-app-pipeline.git'
             }
         }
         stage('Restore Dependencies') {
