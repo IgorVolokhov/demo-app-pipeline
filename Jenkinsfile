@@ -1,5 +1,5 @@
  pipeline {
-    agent {label 'Volokhov-agent'}
+    agent {label 'Volokhov-Agent'}
     stages {
         stage('Get Sources') {
             steps {
