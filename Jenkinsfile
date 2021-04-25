@@ -3,7 +3,7 @@
     stages {
         stage('Get Sources') {
             steps {
-                sh 'npm install'
+                sh 'https://github.com/IgorVolokhov/demo-app-pipeline.git'
             }
         }
         stage('Restore Dependencies') {
